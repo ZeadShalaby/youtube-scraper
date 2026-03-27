@@ -5,8 +5,8 @@
     
   </a>
 
-<h3 align="center"> Kotaby-System </h3>
-<h3 align="center"> it's a project use Events , Login with username | Gmail , Github & Localization </h3>
+<h3 align="center"> youtube-scraper </h3>
+<h3 align="center"> it's a project  with Ai integration  </h3>
 
   <p align="center">
      Project Kotaby-System
@@ -39,16 +39,13 @@
 it's a projects coded in Backend Laravel .
 Frontend blade
 Describe of the Project:
-Kotaby-System: a place in which literary, musical, artistic, or reference materials (such as books, manuscripts, recordings, or films) are kept for use but not for sale. b. : a collection of such materials. a library of jazz recordings
-
+A smart automated tool that uses AI to brainstorm course topics and the YouTube Data API to curate high-quality educational playlists. It features a modern, responsive UI, intelligent database deduplication, and organized category management for a seamless learning discovery experience
 
 ## Built With
 
 **Client:** Laravel blade , bootstrap 
 
 **Server:** Apache, Laravel
-
-**Containerization Service:** Docker
 
 **Miscellaneous:** Github
 
@@ -73,13 +70,13 @@ Clone the project
 
 ```bash
 
-https://github.com/ZeadShalaby/Kotaby-System
+https://github.com/ZeadShalaby/youtube-scraper
 ```
 
 Go to the project directory
 
 ```bash
-  cd Kotaby-System
+  cd youtube-scraper
 ```
 
 Install dependencies
@@ -101,35 +98,43 @@ Install dependencies
      ```bash
      php artisan key:generate
      ```
-3. **Configure Mail Settings**:
-   - Open the `.env` file in a text editor.
-   - Set the following variables to match your MAIL setup:
-     ```plaintext
-      MAIL_MAILER=smtp
-      MAIL_HOST=smtp.gmail.com
-      MAIL_PORT=465
-      MAIL_USERNAME="example@gmail.com"
-      MAIL_PASSWORD=examplepassword01
-      MAIL_ENCRYPTION=ssl
-      MAIL_FROM_ADDRESS="example@gmail.com"
-      MAIL_FROM_NAME="${APP_NAME}"
-     ```
-   - Adjust `MAIL_FROM_ADDRESS` and `MAIL_PASSWORD` .
-
      
-4. **Configure Database Settings**:
+3. **Configure Database Settings**:
    - Open the `.env` file in a text editor.
    - Set the following variables to match your database setup:
      ```plaintext
      DB_CONNECTION=mysql
      DB_HOST=127.0.0.1
      DB_PORT=3306
-     DB_DATABASE=KotabyDB
+     DB_DATABASE=youtube_scraper_db
      DB_USERNAME=root
      DB_PASSWORD=
      ```
    - Adjust `DB_USERNAME` and `DB_PASSWORD` if needed.
+  
+4. **Add API Keys**:
+    This project requires two API keys:
+    - OpenAI API Key
+    Go to OpenAI API
+     and log in.
+    Create a new API key.
 
+    - Add it to your .env file:
+     ```bash
+     OPENAI_API_KEY=sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+     ```
+5. **Add API Keys**:
+    This project requires two API keys:
+    b. YouTube API Key
+        Go to Google Cloud Console
+        and create a project.
+        Enable YouTube Data API v3.
+        Create an API Key under Credentials.
+    - Add it to your .env file:
+     ```bash
+      YOUTUBE_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+     ```
+     
 ### Set Up the Database
 
 1. **Start XAMPP**:
@@ -173,7 +178,7 @@ go to the following route
 Any contributions you make are **greatly appreciated**.
 
 * If you have suggestions for adding or removing projects, feel free
-  to [open an issue](https://github.com/ZeadShalaby/Kotaby-System/issues/new) to discuss it, or directly
+  to [open an issue](https://github.com/ZeadShalaby/youtube_scraper_db/issues/new) to discuss it, or directly
   create a pull request after you edit the *README.md* file with necessary changes.
 * Please make sure you check your spelling and grammar.
 * Create individual PR for each suggestion.
