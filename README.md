@@ -123,13 +123,11 @@ Install dependencies
      ```bash
      OPENAI_API_KEY=sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
      ```
-5. **Add API Keys**:
-    This project requires two API keys:
-    b. YouTube API Key
+
+    - YouTube API Key
         Go to Google Cloud Console
-        and create a project.
-        Enable YouTube Data API v3.
-        Create an API Key under Credentials.
+         and create a project.
+    - Enable YouTube Data API v3.
     - Add it to your .env file:
      ```bash
       YOUTUBE_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
